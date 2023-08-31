@@ -1,0 +1,328 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Heading ................*/
+header {
+    padding: 10px;
+    height: 10vh;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #886eff;
+    box-shadow: 0px 1px 3px black;
+    color: white;
+}
+
+@media only screen and (max-height:550px){
+    header{
+        height: 65px;
+    }
+}
+
+header>h1 {
+    position: relative;
+    left: 20px;
+}
+
+#logo>img {
+    width: 50px;
+    height: 50px;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgb(255, 208, 0);
+    border-radius: 50px;
+    background-color: #ffffff;
+    position: relative;
+    /* top: 10px; */
+    left: 20px;
+    box-shadow: 0px 2px 5px #d1eb11;
+}
+
+#login {
+    position: relative;
+    top: 15px;
+}
+
+
+.btn {
+    color: #ffffff;
+    font-size: 1.2rem;
+    width: 70px;
+    border: none;
+    background-color: transparent;
+}
+
+.btn:hover {
+    color: rgb(201, 195, 195);
+    cursor: pointer;
+}
+
+
+/* main body .........................*/
+
+#main {
+    display: grid;
+    grid-template-columns: 25fr 30fr;
+    grid-template-rows: 1fr;
+
+}
+
+/* login............................. */
+
+#L{
+    right: 10px;
+    height: 35vh;
+    width: 50vh;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgb(83, 82, 82);
+}
+
+/* taskbar............................ */
+#taskbar {
+    border-right: 1px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;   
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4b5f72;
+    height: 85vh;
+    width: 30px;
+    box-shadow: 3px 1px 6px rgb(0, 0, 0);
+    display: none;
+}
+
+.btn2 {
+    height: 6vh;
+    width: 6vh;
+    margin: 3vh 0px;
+    border: none;
+    border-radius: 50px;
+}
+
+.btn2:hover {
+    cursor: pointer;
+}
+
+.btn2:active {
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+#delete {
+    background: url(images/delete.png) no-repeat;
+    background-size: contain;
+}
+
+#addContact {
+    background: url(images/add.jpg) no-repeat;
+    background-size: cover;
+}
+
+#call {
+    background: url(images/call.png) no-repeat;
+    background-size: cover;
+}
+
+/* list............................... */
+#list {
+    height: 80vh;
+    box-sizing: border-box;
+    margin: 2vh;
+    box-shadow: 0px 0px 8px rgb(102, 102, 102);
+    border-radius: 10px;
+}
+
+
+#top {
+    padding: 1vh 1vw;
+    margin: 1vh 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 3px rgb(128, 128, 128);
+}
+
+#bottom {
+    width: 100%;
+    height: 70vh;
+    margin-top: 2vh;
+    overflow-y: auto;
+}
+
+#bottom ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+#bottom ul li {
+    padding: 1vh 1vw;
+    margin: 0.5vh 1vw;
+    height: 7vh;
+    border-radius: 8px;
+    background-color: #72c9f29e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bottom ul li:hover {
+    cursor: pointer;
+    background-color: #00aeff9e;
+}
+
+.name {
+    font-size: 1.3rem;
+    padding: 0px 1vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lilita One', cursive;
+    font-family: 'Lugrasimo', cursive;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.number {
+    color: #4b5f72;
+}
+
+/* display............................. */
+#display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn3 {
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    width: 2vw;
+    font-size: 17px;
+    padding: 0px;
+    margin: 0px;
+    /* background-color: transparent; */
+}
+
+#data {
+    position: absolute;
+    height: 80vh;
+    width: 48vw;
+    background-color: #fff4b6;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo img {
+    border-radius: 70px;
+    border: 1px solid black;
+    height: 20vh;
+    width: 20vh;
+    box-shadow: 0px 0px 6px rgb(0, 0, 0);
+}
+
+#duck {
+    z-index: -1;
+    position: relative;
+    height: 40vh;
+    width: 20vw;
+    background: url(images/duck.png) no-repeat;
+    background-size: contain;
+}
+
+/* footer .............................. */
+
+footer {
+    height: 4vh;
+    background-color: #886eff;
+}
+
+#collide {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    width: 3vw;
+    height: 2.5vh;
+    color: white;
+}
+
+#collide:hover {
+    cursor: pointer;
+}
+
+#collide:active {
+    box-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+@media only screen and (max-width:950px){
+    #main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 10fr 20fr;
+    }
+    #list{
+        height: 40vh;
+    }
+    #bottom {
+        height: 30vh; 
+    }
+    #duck{
+        height: 38vh;
+        width: 38vw;
+    }
+    #data{
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width:650px ) and (min-width:541px) {
+    
+    header{
+        height: 65px;
+        font-size: 1.4rem ;
+    }
+    header h1{
+        font-size: 2.2rem;
+    }
+    #collide{
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        z-index: 100;
+    }
+    #taskbar{
+        height: 40vh;
+    }
+}
+@media only screen and (max-width:540px ) {
+    header{
+        height: 65px;
+        font-size: 1rem ;
+
+    }
+    header h1{
+        font-size: 1.5rem;
+        padding: 10px 20px;
+    }
+    #collide{
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        z-index: 100;
+    }
+    #taskbar{
+        height: 40vh;
+    }
+}

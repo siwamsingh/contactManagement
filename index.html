@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lilita+One&family=Lugrasimo&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div id="logo"> <img src="images/peace.png" alt="logo"></div>
+        <h1>Contact Manager</h1>
+        <div id="login">
+            <button class="btn" id="SignUp"> SignUp </button>/<button class="btn" id="Login"> Login </button>
+        </div>
+    </header>
+    <div id="taskbar">
+
+        <button class="btn2" id="addContact"></button>
+        <button class="btn2" id="call"></button>
+        <button class="btn2" id="delete"></button>
+    </div>
+    <div id="L">
+        <h3>Login or SignUp</h3>
+        <div>
+            <form action="">
+                <label for="#emailID">email Id : </label>
+                <input type="text" name="" id="emailID" placeholder="">
+            </form>
+            <form action="">
+                <label for="#password">password :</label>
+                <input type="text" name="" id="password">
+            </form>
+        </div>
+        <input type="submit">
+    </div>
+
+    <section id="main">
+
+
+        <div id="list">
+            <div id="top">
+                <h2>Contacts</h2>
+                <form action="">
+                    <input type="search" id="search" placeholder="search">
+                </form>
+            </div>
+
+            <div id="bottom">
+                <ul>
+                    <li data-src="images/onepunchman.png">
+                        <div class="name">onepunchman</div>
+                        <div class="number">+1234567890</div>
+                    </li>
+                    <li data-src="images/mrx.jpg">
+                        <div class="name">mr x</div>
+                        <div class="number">+xxxxxxxxxx</div>
+                    </li>
+                    <li data-src="images/jhonny.jpg">
+                        <div class="name">jhonny</div>
+                        <div class="number">+6969696969</div>
+                    </li>
+                    <li data-src="images/onepunchman.png">
+                        <div class="name">Dummy text</div>
+                        <div class="number">+1234567890</div>
+                    </li>
+                    <li data-src="images/onepunchman.png">
+                        <div class="name">Dummy text</div>
+                        <div class="number">+1234567890</div>
+                    </li>
+                    <li data-src="images/onepunchman.png">
+                        <div class="name">Dummy text</div>
+                        <div class="number">+1234567890</div>
+                    </li>
+                    <li data-src="images/onepunchman.png">
+                        <div class="name">Dummy text</div>
+                        <div class="number">+1234567890</div>
+                    </li>
+                    <li data-src="images/onepunchman.png">
+                        <div class="name">Dummy text</div>
+                        <div class="number">+1234567890</div>
+                    </li>
+                    <li data-src="images/onepunchman.png">
+                        <div class="name">Dummy text</div>
+                        <div class="number">+1234567890</div>
+                    </li>
+                    <li data-src="images/onepunchman.png">
+                        <div class="name">Dummy text</div>
+                        <div class="number">+1234567890</div>
+                    </li>
+                    <li data-src="images/onepunchman.png">
+                        <div class="name">Dummy text</div>
+                        <div class="number">+1234567890</div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="display">
+            <div id="data">
+                <button id="btn3"> &times;</button>
+                <div id="photo"><img src="" alt="photo"></div>
+                <br>
+                <hr>
+                <h3>NAME : </h3>
+                <div id="n"></div>
+                <br>
+                <h3>PHONE NO : </h3>
+                <div id="num"></div>
+                <br>
+                <h3>EMAIL : </h3>
+                <div id="email"></div>
+            </div>
+            <div id="duck"></div>
+        </div>
+    </section>
+
+    <footer>
+        <button id="collide">&gt;</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
